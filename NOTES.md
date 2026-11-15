@@ -14,8 +14,9 @@
 ## Entry (v1, exact, awaiting Joni's 'Setuju')
 
 - Repo: https://github.com/Ci3hu1/btc-race-24h-20261115-0828
-- Commit: `d26aa1d0d33d33efd3ebead2033868b46b3a2fc3`
-  (first commit `dd3f38d6776722bc4cb215318bd857e19749292d` + SPDX LICENSE fix)
+- Commit: the HEAD commit on main at submit time (after the re-check
+  passes). At the time of writing: `96f482b5bd4a958cbe658217ab3b97319f3d7401`
+  (first commit `dd3f38d6…` + SPDX LICENSE fix `d26aa1d0…` + NOTES.md).
 - Title for submit: "Deep-dip V-catcher"
 - Bot: `main.py` — pure stdlib Python, agent-fun/bars-replay/v1 via the
   kit's vendored shim. Buys 2.5% dips from the 60-min high with all cash;
@@ -56,7 +57,7 @@
   exact entry to Joni for 'Setuju' and submit only on it:
   `node cli/makefun.mjs submit --competition btc-race-24h-20261115-0828
   --repo-url https://github.com/Ci3hu1/btc-race-24h-20261115-0828
-  --commit d26aa1d0d33d33efd3ebead2033868b46b3a2fc3
+  --commit <HEAD-on-main-at-submit-time> (96f482b5… at time of writing)
   --title "Deep-dip V-catcher" --bundle <transcripts.tar.gz>
   --keypair ~/workspace/tools/makefun/makefun-keypair.json`
   (bundle flags used: --system-prompt /tmp/sysprompt.txt --harness
